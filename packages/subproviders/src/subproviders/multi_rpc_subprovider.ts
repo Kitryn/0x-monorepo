@@ -13,13 +13,13 @@ import { Subprovider } from './subprovider';
  * It forwards on JSON RPC requests to the supplied `rpcUrl` endpoint
  */
 export class MultiRPCSubprovider extends Subprovider {
-    private readonly __rpcUrl: Array<number>;
+    private readonly __rpcUrl: Array<string>;
     private readonly _requestTimeoutMs: number;
     /**
      * @param rpcUrl URL to the backing Ethereum node to which JSON RPC requests should be sent
      * @param requestTimeoutMs Amount of miliseconds to wait before timing out the JSON RPC request
      */
-    constructor(rpcUrl: Array<number>, requestTimeoutMs: number = 20000) {
+    constructor(rpcUrl: Array<string>, requestTimeoutMs: number = 20000) {
         super();
         // assert.isString('rpcUrl', rpcUrl);
         assert.isNumber('requestTimeoutMs', requestTimeoutMs);
