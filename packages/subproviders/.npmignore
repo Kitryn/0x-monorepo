@@ -1,6 +1,6 @@
 # Blacklist all files
-.*
-*
+# .*
+# *
 # Whitelist lib
 !lib/**/*
 # Blacklist tests and publish scripts
