@@ -22,6 +22,7 @@ export { SignerSubprovider } from './subproviders/signer';
 export { RedundantSubprovider } from './subproviders/redundant_subprovider';
 export { LedgerSubprovider } from './subproviders/ledger';
 export { RPCSubprovider } from './subproviders/rpc_subprovider';
+export { MultiRPCSubprovider } from './subproviders/multi_rpc_subprovider';
 export { GanacheSubprovider } from './subproviders/ganache';
 export { Subprovider } from './subproviders/subprovider';
 export {
