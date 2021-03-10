@@ -3,6 +3,7 @@ import { StatusCodes } from '@0x/types';
 import { fetchAsync } from '@0x/utils';
 import { JSONRPCRequestPayload } from 'ethereum-types';
 import JsonRpcError = require('json-rpc-error');
+import Headers from 'node-fetch'
 
 import { Callback, ErrorCallback } from '../types';
 
